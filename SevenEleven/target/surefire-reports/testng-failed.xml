@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="OS X"/>
+  <parameter name="os_version" value="catalina"/>
+  <parameter name="browserVersion" value="85"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="cloudEnvName" value="browserstack"/>
+  <parameter name="url" value="https://www.7-eleven.com/"/>
+  <test thread-count="5" name="SevenEleven Home(failed)" verbose="0">
+    <parameter name="browserVersion" value="85"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="homeTest.HomePageTest">
+        <methods>
+          <include name="setFoodButtonTest"/>
+          <include name="afterEachTestMethod"/>
+          <include name="init"/>
+          <include name="setFindStoreTest"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="setUp"/>
+          <include name="startExtent"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- homeTest.HomePageTest -->
+    </classes>
+  </test> <!-- SevenEleven Home(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

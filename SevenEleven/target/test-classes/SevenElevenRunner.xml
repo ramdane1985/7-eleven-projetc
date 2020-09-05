@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite">
+    <!--    thread-count="2" parallel="tests"-->
+    <!--    Cross Browser Testing-->
+    <!--    Parameter to pass the value to WebAPI-->
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <!--<parameter name="cloudEnvName" value="saucelab"/>-->
+    <!--        <parameter name="os" value="windows"/>-->
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="os_version" value="catalina"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="85"/>
+    <parameter name="url" value="https://www.7-eleven.com/"/>
+    <!--    <parameter name="url" value="http://demo.guru99.com/test/drag_drop.html"/>-->
+
+    <test name="SevenEleven Home">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value="85"/>
+        <classes>
+            <class name="homeTest.HomePageTest">
+                <methods>
+<!--                    <exclude name="setLogoTest"></exclude>-->
+<!--                    <exclude name="setSevenRewardsTest"></exclude>-->
+<!--                    <exclude name="setFoodButtonTest"></exclude>-->
+<!--                    <exclude name="setFindStoreTest"></exclude>-->
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+
+
+</suite>
+
+
+
+
+
